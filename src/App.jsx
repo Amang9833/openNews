@@ -75,11 +75,7 @@ const App = () => {
           path="/automobile"
           element={<News key={"automobile"} category="automobile" />}
         />
-        <Route
-          exact
-          path="*"
-          element={<main><p>Page not found</p></main>}
-        />
+        
         </Routes>
       </Router>
 

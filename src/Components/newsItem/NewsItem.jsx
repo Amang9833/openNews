@@ -5,7 +5,7 @@ import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import ReactLoading from "react-loading";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function NewsItem({ category }) {
   
@@ -53,7 +53,7 @@ function NewsItem({ category }) {
               <img src={item.imageUrl} alt="" />
             </div>
             <div className="icons">
-              <ShareOutlinedIcon className="icon"  />
+              <ShareOutlinedIcon className="icon" />
               <FavoriteBorderOutlinedIcon className="icon" />
               <AddShoppingCartOutlinedIcon className="icon" />
             </div>
@@ -68,14 +68,15 @@ function NewsItem({ category }) {
               <div className="description">{item.content}</div>
             </div>
             <div className="btn">
-              <Link
-                to={`${
+              <a
+                href={`${
                   item.readMoreUrl === null ? item.url : item.readMoreUrl
                 }`}
                 target="_blank"
+                rel="noreferrer"
               >
                 <button>Read more...</button>
-              </Link>
+              </a>
             </div>
           </div>
         );
