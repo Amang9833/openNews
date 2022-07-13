@@ -1,0 +1,110 @@
+.navbar{
+    display: flex;
+    // border: 1px solid gray;
+    height: 50px;
+    overflow-x: hidden;
+    box-shadow: -1px 19px 10px -16px lightgray;
+        -webkit-box-shadow: -1px 19px 68px -16px lightgray;
+        -moz-box-shadow: -1px 19px 68px -16px lightgray;
+
+        
+        
+       
+
+    .left{
+        flex: 2;
+        // border-right: 1px solid gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 500;
+        color: #6b84ff93;
+        margin-left: 20px;
+
+        .bold{
+            font-weight: 700;
+            color: #6B84FF;
+        }
+
+    }
+    .right{
+        flex: 5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+       
+
+        .search{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            margin-left: 5px;
+            flex: 2;
+
+            .warpper{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid gray;
+                
+
+                
+                .searchBtn{
+                    outline: none;
+                    border: none;
+                    padding: 0 10px;
+                }
+
+                .btn{
+                    color: #6B84FF;
+                    cursor: pointer;
+                }
+               
+
+
+            }
+        }
+
+        .categories{
+            flex: 6;
+            overflow-x: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            
+
+            .items{
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 20px;
+                
+                .item{
+                    padding: 15px ;
+                    margin-left: 10px;
+                    font-weight: 500;
+                    
+
+
+                }
+                .item:hover{
+                    text-shadow: 5px 5px 15px gray;
+
+                }
+            }
+        }
+
+        .categories::-webkit-scrollbar{
+            display: none;
+        }
+
+
+
+
+    }
+
+}
+
